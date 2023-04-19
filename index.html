@@ -14,7 +14,7 @@
   <body class="page">
     <header class="header">
       <img
-          class="header-img"
+          class="image"
           src="./eisenhower-matrix.jpg"
           alt="Eisenhower Matrix">
       <a class="info"
@@ -24,48 +24,48 @@
     </header>
     <main class="main">
       <section>
-        <h3 class="heading new-task-heading">
+        <h3 class="heading">
           <label for="new-task">Add Item</label>
         </h3>
-        <div class="new-task-wrapper">
+        <div class="task task_new">
           <input
               id="new-task"
-              class="item-input item-heading"
+              class="task__name_input task__name"
               type="text">
           <button class="btn">Add</button>
         </div>
       </section>
       <section>
         <h3 class="heading">Todo</h3>
-        <ul class="list" id="tasks">
-          <li class="list-item">
+        <ul id="todo">
+          <li class="task">
             <input class="checkbox" type="checkbox">
-            <label class="task item-heading item-label">Pay Bills</label>
-            <input type="text" class="item-input item-heading display-none">
+            <label class="task__name task__label">Pay Bills</label>
+            <input type="text" class="task__name_input task__name display_none">
             <button class="btn btn-edit">Edit</button>
-            <button class="btn btn-del"></button>
+            <button class="btn btn_del"></button>
           </li>
-          <li class="list-item edit-mode">
+          <li class="task edit-mode">
             <input class="checkbox" type="checkbox">
-            <label class="task item-heading item-label display-none">Go Shopping</label>
+            <label class="task__name task__label display_none">Go Shopping</label>
             <input
                 type="text"
                 value="Go Shopping"
-                class="item-input item-heading">
+                class="task__name_input task__name">
             <button class="btn btn-edit">Save</button>
-            <button class="btn btn-del"></button>
+            <button class="btn btn_del"></button>
           </li>
         </ul>
       </section>
       <section>
         <h3 class="heading">Completed</h3>
-        <ul class="list" id="completed">
-          <li class="list-item">
+        <ul id="completed">
+          <li class="task">
             <input class="checkbox" type="checkbox" checked>
-            <label class="task item-heading item-label task-completed">See the Doctor</label>
-            <input type="text" class="item-input item-heading display-none">
+            <label class="task__name task__label task__name_complete">See the Doctor</label>
+            <input type="text" class="task__name_input task__name display_none">
             <button class="btn btn-edit">Edit</button>
-            <button class="btn btn-del"></button>
+            <button class="btn btn_del"></button>
           </li>
         </ul>
       </section>
