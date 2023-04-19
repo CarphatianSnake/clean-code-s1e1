@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.header .more-info {
+.header .info {
   font-family: fantasy, cursive;
 }
 
@@ -55,7 +55,7 @@ h3 {
 }
 
 input,
-button{
+button {
   outline: none;
 }
 
@@ -137,22 +137,22 @@ li > label {
   width: 226px;
 }
 
-li >    input[type="text"] {
+li > input[type="text"] {
   width: 226px;
 }
 
-button.btn-delete img {
+button.btn-del img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.btn-delete img:hover {
+button.btn-del img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#completed label {
   text-decoration: line-through;
   color: #888;
 }
