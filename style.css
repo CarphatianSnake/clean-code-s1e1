@@ -42,6 +42,7 @@ button {
 
 .new-task-wrapper {
   display: flex;
+  margin-bottom: 1em;
 }
 
 .list {
